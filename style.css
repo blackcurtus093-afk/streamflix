@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #111;
+  color: white;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.logo {
+  color: red;
+}
+
+.navbar a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+/* Hero */
+.hero {
+  height: 80vh;
+  background: linear-gradient(to top, #111, transparent),
+              url("https://via.placeholder.com/1200x600");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding: 60px;
+}
+
+.hero-content button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.hero-content .info {
+  background: gray;
+  color: white;
+}
+
+/* Rows */
+.row {
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.row-posters {
+  display: flex;
+  gap: 10px;
+  overflow-x: scroll;
+}
+
+.poster {
+  min-width: 200px;
+  height: 120px;
+  background: #333;
+  border-radius: 4px;
+  transition: transform 0.3s;
+}
+
+.poster:hover {
+  transform: scale(1.1);
+}
